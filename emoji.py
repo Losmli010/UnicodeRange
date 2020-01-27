@@ -87,9 +87,8 @@ def check():
     for i in range(start, end + 1):
         char = chr(i)
         # print(char, hex(i), ord(char), i)
-        if TAGS.search(chr(i)):
+        if TAGS.search(char):
             print("匹配成功", char)
-            pass
         else:
             print("匹配失败", char)
     print(len(range(start, end + 1)))
